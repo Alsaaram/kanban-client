@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_unauthenticated/auth/login")({
   component: LoginPage,
@@ -25,7 +25,7 @@ function LoginPage() {
         <div className="my-6 flex justify-center">
           <a className="text-sm text-blue-600 tracking-wide hover:underline">Can't log in?</a>
           <span className="mx-2 text-sm">•</span>
-          <a className="text-sm text-blue-600 tracking-wide hover:underline">Create an account</a>
+          <Link to="/auth/register" className="text-sm text-blue-600 tracking-wide hover:underline">Create an account</Link>
         </div>
 
         <div className="flex justify-center border border-t-gray-500 border-b-0 border-x-0">

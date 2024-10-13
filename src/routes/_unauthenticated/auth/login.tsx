@@ -6,14 +6,12 @@ export const Route = createFileRoute("/_unauthenticated/auth/login")({
 
 function LoginPage() {
   return (
-    <div className="flex flex-col h-screen w-screen justify-center my-[50px] bg-gray-50">
+    <div className="flex flex-col h-screen w-screen justify-center bg-gray-50">
       <section className="my-0 mx-auto py-8 px-10 w-[400px] shadow-2xl rounded-xl ring-1 ring-gray-900/5 text-black">
 
         <div className="flex flex-col content-center items-center text-center mb-4">
-          <span className="h-full fill-inherit text-3xl font-extrabold font-serif">Kobah</span>
-          <span className="pt-2 font-medium text-lg">
-            <h5>Log in to continue</h5>
-          </span>
+          <h1 className="text-3xl font-extrabold font-serif">Kobah</h1>
+          <h5 className="pt-2 font-medium text-lg">Log in to continue</h5>
         </div>
 
         <div>
